@@ -35,7 +35,7 @@ function MovieApp(){
 
     return(
         <>
-           <h1>MovieLand</h1>
+           <h1>MoviePool.</h1>
       <div className='search'>
         {/* Value in the search field is currently Superman onChange event allows change every time user tries to type something */}
         {/* Let us dynamically change the value of the search using value user types i the field */}
@@ -50,9 +50,7 @@ function MovieApp(){
       {
         movies?.length > 0 ?(
             <div className="container">
-                <div className="empty">
-                <h2>Movies Found</h2>
-            </div>
+                <div className="empty"><h2>Movies Found</h2></div>
                 {movies.map(
                     (movie)=>
                     (<MovieCard movie={movie}></MovieCard>))}
